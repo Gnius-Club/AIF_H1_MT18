@@ -1,24 +1,281 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Playbook — 1º Preparatoria — Misión M18 - Workflows con IA</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
+<header>
+    <h1><span class="book-icon">📋</span> <strong>Playbook Misión 18: Workflows con IA</strong></h1>
+    <div class="header-widgets">
+        <div class="timer-container">
+            <span id="timer">⏱️ 00:00</span>
+            <button id="startStop">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle-input">
+                <span class="slider round"></span>
+            </label>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+</header>
+<div class="main-container">
+    <aside class="activity-list">
+        <h2>Actividades</h2>
+        <ul>
+            <li><a href="#activity-0">📝</a></li>
+            <li><a href="#activity-1">1</a></li>
+            <li><a href="#activity-2">2</a></li>
+            <li><a href="#activity-3">3</a></li>
+            <li><a href="#activity-4">4</a></li>
+            <li><a href="#activity-5">5</a></li>
+        </ul>
+        <div class="sidebar-info">
+            <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+            <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+        </div>
+    </aside>
+    <main class="content" id="playbook">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <button id="toggle-dialogues">Mostrar todos los diálogos</button>
 
+        <section class="activity-card" id="activity-0">
+            <h2 class="activity-title">📝 De un Vistazo: Misión M18 - Workflows con IA</h2>
+            <p class="activity-purpose">Resumen de objetivos, secuencia y entregables de la sesión.</p>
+            <div class="overview">
+                <section class="overview-block">
+                    <h3>Objetivos e “I Can”</h3>
+                    <ul>
+                        <li>Puedo diseñar un workflow de IA multimodal para la creación de contenido, orquestando diferentes herramientas de IA.</li>
+                        <li>Puedo aplicar el concepto de "orquestación de especialistas" para integrar IAs como Leonardo.AI, ElevenLabs y Suno.</li>
+                    </ul>
+                </section>
+                <section class="overview-block">
+                    <h3>Secuencia y tiempos</h3>
+                    <ol>
+                        <li>Saludo Interactivo con IA — 3 min</li>
+                        <li>“I Can” + Desafío — 5–7 min</li>
+                        <li>AI GYM — 10–12 min</li>
+                        <li>Brain Spark — 17–20 min</li>
+                        <li>GNIUS STORM — 5 min</li>
+                    </ol>
+                </section>
+                <section class="overview-block">
+                    <h3>Entregable del Micro-Proyecto</h3>
+                    <ul>
+                        <li>Un diagrama de "línea de ensamblaje" (workflow) que ilustra el uso secuencial de IAs para una creación multimodal.</li>
+                    </ul>
+                </section>
+                <section class="overview-block">
+                    <h3>Criterios de calidad</h3>
+                    <ul>
+                        <li>Claridad en la secuencia de interacción entre IAs.</li>
+                        <li>Identificación precisa del rol de cada IA en el workflow.</li>
+                        <li>Coherencia del workflow para producir un producto multimodal completo.</li>
+                        <li>Uso de IAs específicas (Leonardo.AI, ElevenLabs, Suno) o equivalentes.</li>
+                    </ul>
+                </section>
+                <section class="overview-block">
+                    <h3>Materiales y preparación</h3>
+                    <ul>
+                        <li>Proyector e internet</li>
+                        <li>Acceso a LLM (Xolo) y herramientas: Leonardo.AI, ElevenLabs, Suno (o equivalentes), software de diagramación.</li>
+                        <li>Plantilla de ejemplo lista</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <section class="activity-card" id="activity-1">
+            <h2 class="activity-title">Saludo Interactivo con IA</h2>
+            <p class="activity-purpose">Activar a Xolo con perfil e intereses; conectar con el foco de la misión.</p>
+            <div class="steps">
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 1 — Bienvenida y foco</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 3. Presenta el tema y el valor profesional de la orquestación de IAs.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Equipo, hoy nos enfocaremos en la orquestación de inteligencias artificiales. No se trata solo de usar una herramienta, sino de aprender a dirigir un conjunto de especialistas en IA para construir algo complejo. Esto es fundamental para la producción creativa y eficiente en cualquier campo profesional.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 2 — Activación con Xolo</h3>
+                        <p class="step-instructions">Cada estudiante envía a Xolo: “Hola Xolo, soy [Nombre], perfil [X]; me interesa [Y]. Estoy en la Misión M18.”</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Activen a Xolo con su perfil e intereses. Confirmen que comprendieron los criterios de hoy y sigan sus indicaciones personalizadas.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="activity-card" id="activity-2">
+            <h2 class="activity-title">“I Can Statement” + Desafío</h2>
+            <p class="activity-purpose">Alinear expectativas y definir el reto práctico.</p>
+            <div class="steps">
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 1 — Presenta el reto</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 4. Describe el reto de diseñar un workflow de IA multimodal.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">El reto de hoy es diseñar una 'línea de ensamblaje' digital. Esto implica conceptualizar cómo diferentes IAs, cada una con su especialidad, pueden trabajar en secuencia para construir un producto creativo multimodal. Buscamos un diseño lógico y eficiente.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 2 — Escribe tu “I Can”</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 5. Cada estudiante redacta 1 “I Can” concreto alineado al entregable.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Formula tu “Puedo…” en 1 frase: acción + criterio + resultado. Por ejemplo: “Puedo diseñar un workflow de IA multimodal que integre diferentes herramientas de IA para producir un entregable complejo.”</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="activity-card" id="activity-3">
+            <h2 class="activity-title">AI GYM</h2>
+            <p class="activity-purpose">Formalizar el marco/técnica de IA de la sesión: Orquestación de Herramientas Creativas.</p>
+            <div class="steps">
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 1 — Marco del día</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 6. Introduce el framework de Orquestación de Herramientas Creativas.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Hoy nos centraremos en la orquestación de herramientas creativas de IA. Este marco es vital porque les permite construir productos complejos que van más allá de las capacidades de una sola IA, como si dirigieran una orquesta de especialistas. Eviten el error de intentar que una sola IA haga todo o de no definir claramente el rol de cada herramienta. La clave es la secuencia y la especialización.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 2 — Mini-demostración</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 7. Construye un ejemplo mínimo de workflow multimodal (ej. Texto -> Imagen -> Voz).</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Observen cómo definimos el input y output de cada etapa, y cómo cada IA (Leonardo.AI para imagen, ElevenLabs para voz, Suno para música) aporta un elemento específico. ¿Es claro cómo el resultado de una IA alimenta a la siguiente? ¿Identifican la especialidad de cada una?</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 3 — Check rápido</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 8. Verifica comprensión con 2 preguntas breves.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Pregunta 1: ¿Cuál es el beneficio principal de usar múltiples IAs en un workflow creativo? Pregunta 2: ¿Qué significa 'orquestar' IAs en este contexto?</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="activity-card" id="activity-4">
+            <h2 class="activity-title">Brain Spark</h2>
+            <p class="activity-purpose">Producir el entregable tangible del Micro-Proyecto: el diagrama de workflow.</p>
+            <div class="steps">
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 1 — Producción</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 9. Indica que deben producir un diagrama de "línea de ensamblaje" para una creación multimodal. Tiempo de trabajo autónomo.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">N/A</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 2 — Iteración</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 10. Pide una mejora concreta: refinar la secuencia para optimizar la eficiencia o la calidad, o añadir un paso de control de calidad.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Antes de finalizar, revisen su diagrama. ¿La secuencia es lógica y eficiente? ¿Cada IA tiene un rol claramente definido y su output es un input válido para la siguiente? Asegúrense de que el flujo sea comprensible y que el producto final sea realmente multimodal.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 3 — Evidencia</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 11. Solicita evidencia: diagrama digital (imagen, PDF, enlace).</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Suban su diagrama final al espacio de trabajo compartido. Nombren su archivo: M18_Workflow_[SuNombre]. Este será su entregable clave.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="activity-card" id="activity-5">
+            <h2 class="activity-title">GNIUS STORM</h2>
+            <p class="activity-purpose">Exhibir resultados y cerrar con síntesis accionable.</p>
+            <div class="steps">
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 1 — Showcase relámpago</h3>
+                        <p class="step-instructions">2–3 equipos/personas muestran evidencia clave (30–45 s c/u).</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">En 30 segundos, presenten su diagrama: qué producto multimodal buscaban crear, qué IAs orquestaron y por qué eligieron esa secuencia.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="step-card">
+                    <div class="step-content">
+                        <h3 class="step-title">Paso 2 — Cierre ejecutivo</h3>
+                        <p class="step-instructions">Proyectar Diapositiva 12. Entrega síntesis: 1 aprendizaje clave + 1 criterio que más impacto tuvo + siguiente paso fuera del aula.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Síntesis: Hoy aprendimos que la creación con IA no es solo usar una herramienta, sino orquestar un equipo de especialistas digitales. La claridad en la definición de roles y la secuencia lógica de su workflow fueron los criterios que marcaron la diferencia en la calidad de su diseño. El siguiente paso es llevar esta mentalidad de 'director de orquesta' a cualquier proyecto, identificando qué 'especialista' de IA es el mejor para cada tarea específica, transformando ideas complejas en realidades multimodales.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
 </html>
